@@ -1,0 +1,45 @@
+/* COLORS */
+$rose: #C994A4;
+$beige: #D8C6B5;
+$blanc-1: #fff;
+$blanc-2: #F1F1F1;
+$noir: #262626;
+
+/* FONTS */
+$font-1: 'Sacramento', cursive;
+$font-2: 'Poppins', sans-serif;
+
+/* MISC */
+@mixin border-radius {
+  border-radius: 30px;
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  color: $noir;
+  background-color: $noir;
+  font-family: $font-2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 { 
+  font-family: $font-1;
+  color: $rose;
+}
+

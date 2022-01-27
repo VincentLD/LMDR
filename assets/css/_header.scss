@@ -1,0 +1,141 @@
+.header {
+  height: 100vh;
+
+  .navbar {
+    height: 100%;
+    
+    .nav__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      position: fixed;
+      width: 100%;
+      left: 100vw;
+      background-color: $beige;
+      transition: all .5s ease-out;
+
+      .navbar__item {
+        text-align: center;
+      }
+
+      .nav__link {
+        font-size: clamp(4.5rem, 4vw, 5rem);
+        font-family: $font-1;
+        color: $blanc-1;
+        i {display: none;}
+
+      }
+    }
+
+    .burger-bars {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      border: none;
+      height: 30px;
+      width: 40px;
+      cursor: pointer;
+      padding: 2.4em;
+      background-color: $blanc-2;
+      border-radius: 50%;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      
+
+      .burger-bar {
+        width: 40px;
+        height: 4px;
+        background-color: $beige;
+        display: block;
+        border-radius: 10px;
+        transition: all .3s ease-in-out;
+        left: -1.4em;
+        position: relative;        
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          border-radius: 10px;
+          display: block;
+          background-color: $beige;
+          height: 4px;
+          width: 40px;
+          transition: all .3s ease-in-out;
+        }
+        
+        &::before {
+          transform: translateY(-12px);
+        }
+        
+        &::after {
+          transform: translateY(12px);
+        }
+      }
+    }
+  }
+  .show-nav {
+    .nav__links {
+      width: 100vw;
+      left: 0;
+    }
+    .burger-bars {
+      .burger-bar {
+        width: 0;
+        background-color: transparent;
+      }
+      .burger-bar::before {
+        transform: rotate(46deg) translateX(-1px) translateY(-1px);
+      }
+      .burger-bar::after {
+        transform: rotate(-46deg) translateX(-1px) translateY(-1px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    .navbar {
+      .burger-bars { display: none;}
+
+      .nav__links {
+        left: unset;
+        background-color: transparent;
+        right: 2%;
+        width: unset;
+        align-items: flex-end;
+
+        .navbar__item {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          
+          .nav__link {
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-radius: 35px;
+            width: 100%;
+            transition: all .2s ease-out;
+            
+            i {
+              font-size: 4.5rem;
+              border: 1px solid aliceblue;
+              border-radius: 35px;
+              padding: 0.3em;
+              display: block;
+            }
+  
+            span {
+              position: absolute;
+              left: -300px;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
