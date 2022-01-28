@@ -123,29 +123,171 @@ h2 {
     width: unset;
     align-items: flex-end;
   }
-  .header .navbar .nav__links .navbar__item {
-    width: 100%;
+  .header .navbar .nav__links .navbar__item .nav__link {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    border: 1px solid red;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    overflow: hidden;
+  }
+  .header .navbar .nav__links .navbar__item .nav__link:hover {
+    width: 400px;
+  }
+  .header .navbar .nav__links .navbar__item .nav__link i {
+    display: block;
+    font-size: 4.5rem;
+    background-color: #262626;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    border-radius: 35px;
+  }
+  .header .navbar .nav__links .navbar__item .nav__link span {
+    display: block;
+    position: absolute;
+    right: 75px;
+    white-space: nowrap;
+  }
+}
+.header {
+  height: 100vh;
+}
+.header .navbar {
+  height: 100%;
+}
+.header .navbar .nav__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  left: 100vw;
+  background-color: #D8C6B5;
+  transition: all 0.5s ease-out;
+}
+.header .navbar .nav__links .navbar__item {
+  text-align: center;
+}
+.header .navbar .nav__links .nav__link {
+  font-size: clamp(4.5rem, 4vw, 5rem);
+  font-family: "Sacramento", cursive;
+  color: #fff;
+}
+.header .navbar .nav__links .nav__link i {
+  display: none;
+}
+.header .navbar .burger-bars {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  padding: 2.4em;
+  background-color: #F1F1F1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.header .navbar .burger-bars .burger-bar {
+  width: 40px;
+  height: 4px;
+  background-color: #D8C6B5;
+  display: block;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  left: -1.4em;
+  position: relative;
+}
+.header .navbar .burger-bars .burger-bar::before, .header .navbar .burger-bars .burger-bar::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  display: block;
+  background-color: #D8C6B5;
+  height: 4px;
+  width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.header .navbar .burger-bars .burger-bar::before {
+  transform: translateY(-12px);
+}
+.header .navbar .burger-bars .burger-bar::after {
+  transform: translateY(12px);
+}
+.header .show-nav .nav__links {
+  width: 100vw;
+  left: 0;
+}
+.header .show-nav .burger-bars .burger-bar {
+  width: 0;
+  background-color: transparent;
+}
+.header .show-nav .burger-bars .burger-bar::before {
+  transform: rotate(46deg) translateX(-1px) translateY(-1px);
+}
+.header .show-nav .burger-bars .burger-bar::after {
+  transform: rotate(-46deg) translateX(-1px) translateY(-1px);
+}
+
+@media screen and (min-width: 1024px) {
+  .header .navbar .burger-bars {
+    display: none;
+  }
+  .header .navbar .nav__links {
+    left: unset;
+    background-color: transparent;
+    right: 2%;
+    width: unset;
+    align-items: flex-end;
   }
   .header .navbar .nav__links .navbar__item .nav__link {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    border-radius: 35px;
     width: 100%;
     transition: all 0.2s ease-out;
+    border: 1px solid red;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    overflow: hidden;
+  }
+  .header .navbar .nav__links .navbar__item .nav__link:hover {
+    width: 400px;
   }
   .header .navbar .nav__links .navbar__item .nav__link i {
-    font-size: 4.5rem;
-    border: 1px solid aliceblue;
-    border-radius: 35px;
-    padding: 0.3em;
     display: block;
+    font-size: 4.5rem;
+    background-color: #262626;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    border-radius: 35px;
   }
   .header .navbar .nav__links .navbar__item .nav__link span {
+    display: block;
     position: absolute;
-    left: -300px;
+    right: 75px;
+    white-space: nowrap;
   }
 }
 
