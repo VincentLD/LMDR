@@ -3,6 +3,8 @@
 
   .navbar {
     height: 100%;
+    position: absolute;
+    z-index: 10;
     
     .nav__links {
       display: flex;
@@ -17,10 +19,11 @@
 
       .navbar__item {
         text-align: center;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.08));
       }
 
       .nav__link {
-        font-size: clamp(4.5rem, 4vw, 5rem);
+        font-size: 3rem;
         font-family: $font-1;
         color: $blanc-1;
         i {display: none;}
@@ -115,20 +118,18 @@
             position: relative;
             width: 100%;
             transition: all .2s ease-out;
-            border: 1px solid red;
             height: 70px;
+            background-color: $blanc-2;
             width: 70px;
+            font-size: unset;
             border-radius: 35px;
             overflow: hidden;
-
-            &:hover {
-              width: 400px;
-            }
             
             i {
               display: block;
-              font-size: 4.5rem;
-              background-color: $noir;
+              font-size: 2.8rem;
+              background-color: $blanc-2;
+              color: $beige;
               position: absolute;
               height: 70px;
               width: 70px;
@@ -138,13 +139,17 @@
               display: grid;
               place-items: center;
               border-radius: 35px;
+              transition: all .2s ease-out;
             }
   
             span {
               display: block;
+              color: $beige;
               position: absolute;
               right: 75px;
               white-space: nowrap;
+              font-size: 3rem;
+              transition: all .2s ease-out;
             }
           }
         }

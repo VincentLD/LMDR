@@ -20,13 +20,11 @@ $font-2: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%
-}
+html { font-size: 62.5; }
 
 body {
   color: $noir;
-  background-color: $noir;
+  background-color: $blanc-2;
   font-family: $font-2;
 }
 
@@ -41,5 +39,14 @@ a {
 h2 { 
   font-family: $font-1;
   color: $rose;
+  letter-spacing: -1.2px;
 }
 
+.button {
+  padding: 0.4em 2em;
+  background: $rose;
+  border-radius: 20px;
+  color: $blanc-2;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
