@@ -1,11 +1,12 @@
-.header {
+.nav {
   height: 100vh;
+  position: absolute;
 
   .navbar {
     height: 100%;
     position: absolute;
-    z-index: 10;
-    
+    z-index: 30;
+
     .nav__links {
       display: flex;
       flex-direction: column;
@@ -19,15 +20,15 @@
 
       .navbar__item {
         text-align: center;
+        z-index: 40;
         filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.08));
       }
 
       .nav__link {
-        font-size: 3rem;
+        font-size: 5rem;
         font-family: $font-1;
         color: $blanc-1;
         i {display: none;}
-
       }
     }
 
@@ -82,14 +83,17 @@
       width: 100vw;
       left: 0;
     }
+
     .burger-bars {
       .burger-bar {
         width: 0;
         background-color: transparent;
       }
+
       .burger-bar::before {
         transform: rotate(46deg) translateX(-1px) translateY(-1px);
       }
+      
       .burger-bar::after {
         transform: rotate(-46deg) translateX(-1px) translateY(-1px);
       }
@@ -98,7 +102,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .header {
+  .nav {
     .navbar {
       .burger-bars { display: none;}
 
@@ -110,6 +114,7 @@
         align-items: flex-end;
         
         .navbar__item {
+          z-index: 40;
 
           .nav__link {
             display: flex;
@@ -127,7 +132,7 @@
             
             i {
               display: block;
-              font-size: 2.8rem;
+              font-size: 3.8rem;
               background-color: $blanc-2;
               color: $beige;
               position: absolute;
@@ -148,14 +153,12 @@
               position: absolute;
               right: 75px;
               white-space: nowrap;
-              font-size: 3rem;
+              font-size: 4rem;
               transition: all .2s ease-out;
             }
           }
         }
-
       }
-
     }
   }
 }

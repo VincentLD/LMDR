@@ -9,6 +9,12 @@ $noir: #262626;
 $font-1: 'Sacramento', cursive;
 $font-2: 'Poppins', sans-serif;
 
+/* FONT SIZE */
+$fs-section-1: clamp(4rem, 8vw, 6.5rem);
+$fs-section-2: clamp(1.8rem, 2vw, 2.2rem);
+$fs-section-3: clamp(1.6rem, 1.5vw, 1.8rem);
+$fs-button: 1.6rem;
+
 /* MISC */
 @mixin border-radius {
   border-radius: 30px;
@@ -20,7 +26,7 @@ $font-2: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
-html { font-size: 62.5; }
+html { font-size: 62.5%; }
 
 body {
   color: $noir;
@@ -49,4 +55,11 @@ h2 {
   color: $blanc-2;
   font-weight: bold;
   margin-bottom: 2em;
+  font-size: $fs-button;
+  cursor: pointer;
+  transition: all .1s ease;
+  
+  &:hover {
+    background-color: #a77b88;
+  }
 }

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1em;
+  height: 100vh;
 
   .header__bg {
     position: absolute;
@@ -24,7 +25,7 @@
 
   .header__title {
     text-align: center;
-    font-size: clamp(1.15rem, 5vw , 2.5rem);
+    font-size: clamp(2.65rem, 5vw , 4rem);
     color: $blanc-1;
 
     &--block {

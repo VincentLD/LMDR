@@ -1,0 +1,148 @@
+.contact {
+  width: 85%;
+  margin: auto;
+  position: relative;
+
+  .contact__bg, .right, .left__image {display: none;}
+  
+
+  .contact__title {
+    color: $rose;
+    font-size: $fs-section-1;
+    text-align: center;
+  }
+  
+  .contact__subtitle {
+    font-size: $fs-section-3;
+    text-align: center;
+    margin-bottom: 1em;
+    &--block {display: block;}
+  }
+
+  .form {
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .8em;
+
+      .form__label {
+        padding-left: .3em;
+        font-size: $fs-section-3;
+      }
+
+      .form__input {
+        border: none;
+        padding: .7em .6em;
+        border-radius: 5px;
+        background-color: #E4E4E4;
+        font-family: $font-2;
+
+        &--textarea {
+          resize: none;
+        }
+
+        &:focus-visible {
+          outline: 2px solid $rose;
+        }
+      }
+    }
+
+    .form__message {
+      margin-bottom: 1em;
+      font-size: 1.5rem;
+    }
+
+    .form__submit {
+      width: 100%;
+      padding: .7em;
+      background-color: $rose;
+      border: none;
+      border-radius: 5px;
+      color: $blanc-1;
+      text-transform: uppercase;
+      font-size: $fs-button;
+      margin-bottom: 2em;
+      cursor: pointer;
+      transition: all .1s ease;
+
+      &:hover {
+        background-color: #a77b88;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $beige;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blanc-1;
+  font-size: 1.6rem;
+
+  p {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    width: 100%;
+
+    .contact__bg {
+      display: block;
+      position: absolute;
+      z-index: -10;
+      width: 70%;
+      height: 100%;
+      object-fit: cover;
+      transform: rotate(-30deg);
+    }
+
+    .wrapper {
+      display: flex;
+
+      .left, .right {
+        width: 50%;
+      }
+
+      .left {
+        position: relative;
+
+        .left__image {
+          z-index: -10;
+          display: block;
+          position: absolute;
+          right: 5%;
+          top: 10%;
+        }
+        .contact__title, .contact__subtitle{
+          text-align: unset;
+          padding-left: 20%
+        }
+
+        .form {
+          width: 80%;
+          max-width: 580px;
+          margin: 0 auto 2em auto;
+        }
+      }
+
+      .right {
+        z-index: -15;
+        display: block;
+        background-color: #EAEAEA;
+        position: relative;
+
+        .right__image {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
