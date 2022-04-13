@@ -579,7 +579,7 @@ h2 {
     border-radius: 35px;
     overflow: hidden;
   }
-  .nav .navbar .nav__links .navbar__item .nav__link i {
+  .nav .navbar .nav__links .navbar__item .nav__link .nav__icon {
     display: block;
     font-size: 3.8rem;
     background-color: #F1F1F1;
@@ -595,7 +595,10 @@ h2 {
     border-radius: 35px;
     transition: all 0.2s ease-out;
   }
-  .nav .navbar .nav__links .navbar__item .nav__link span {
+  .nav .navbar .nav__links .navbar__item .nav__link .nav__icon--active {
+    color: #C994A4;
+  }
+  .nav .navbar .nav__links .navbar__item .nav__link .link {
     display: block;
     color: #D8C6B5;
     position: absolute;
@@ -603,6 +606,9 @@ h2 {
     white-space: nowrap;
     font-size: 4rem;
     transition: all 0.2s ease-out;
+  }
+  .nav .navbar .nav__links .navbar__item .nav__link .link--active {
+    color: #C994A4;
   }
 }
 .header {

@@ -16,12 +16,18 @@ links.forEach((link) => {
 		nav.classList.contains('show-nav') ? nav.classList.remove('show-nav') : ''
 	);
 	link.addEventListener('mouseover', () => {
+		console.log(link);
 		const textWidth = link.childNodes[1].offsetWidth;
 		link.style.width = 100 + textWidth + 'px';
+		link.childNodes[1].classList.add('link--active');
+		link.childNodes[3].classList.add('nav__icon--active');
 	});
 
 	link.addEventListener('mouseleave', () => {
+		console.log("leave: " + link);
 		const textWidth = link.childNodes[1].offsetWidth;
 		link.style.width = 70 + 'px';
+		link.childNodes[1].classList.remove('link--active');
+		link.childNodes[3].classList.remove('nav__icon--active');
 	});
 });

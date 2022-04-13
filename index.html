@@ -1,362 +1,283 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sacramento&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/0045004211.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<title>Le Monde De Rustine</title>
-	</head>
-	<body>
-		<!-- 🌀🌀🌀 NAVBAR 🌀🌀🌀 -->
-		<div class="nav">
-			<nav class="navbar">
-				<ul class="nav__links">
-					<li class="navbar__item">
-						<a href="#" class="nav__link">
-							<span class="link">Accueil</span>
-							<i class="fas fa-home"></i>
-						</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#" class="nav__link">
-							<span class="link">Qui suis-je ?</span>
-							<i class="fas fa-user"></i>
-						</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#" class="nav__link">
-							<span class="link">Services</span>
-							<i class="fas fa-paw"></i>
-						</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#" class="nav__link">
-							<span class="link">Contact</span>
-							<i class="fas fa-envelope"></i>
-						</a>
-					</li>
-				</ul>
-				<button class="burger-bars">
-					<span class="burger-bar"></span>
-				</button>
-			</nav>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sacramento&display=swap"
+		rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/0045004211.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<title>Le Monde De Rustine</title>
+</head>
+
+<body>
+	<!-- 🌀🌀🌀 NAVBAR 🌀🌀🌀 -->
+	<div class="nav">
+		<nav class="navbar">
+			<ul class="nav__links">
+				<li class="navbar__item">
+					<a href="#" class="nav__link">
+						<span class="link">Accueil</span>
+						<i class="fas fa-home nav__icon"></i>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="nav__link">
+						<span class="link">Qui suis-je ?</span>
+						<i class="fas fa-user nav__icon"></i>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="nav__link">
+						<span class="link">Services</span>
+						<i class="fas fa-paw nav__icon"></i>
+					</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="nav__link">
+						<span class="link">Contact</span>
+						<i class="fas fa-envelope nav__icon"></i>
+					</a>
+				</li>
+			</ul>
+			<button class="burger-bars">
+				<span class="burger-bar"></span>
+			</button>
+		</nav>
+	</div>
+	<!-- 🌀🌀🌀 HEADER 🌀🌀🌀 -->
+	<header class="header">
+		<img src="./assets/img/header.jpg" alt="Béatrice avec Sally" class="header__bg" />
+		<img src="./assets/img/logo.png" alt="Logo du Monde De Rustine" class="header__logo" />
+
+		<h1 class="header__title">
+			Médiation par l'animal
+			<span class="header__title--block">Comportementaliste canin et félin</span>
+			<span class="header__title--block">Pet-sitting</span>
+		</h1>
+	</header>
+	<!-- 🌀🌀🌀 QUI SUIS-JE 🌀🌀🌀 -->
+	<section class="about">
+		<img class="about__path" src="./assets/img/paw-path.png" alt="pattes de chien" />
+		<h2 class="about__title">Qui suis-je ?</h2>
+		<div>
+			<div class="about__imgWrapper">
+				<div class="about__imgSubWrapper">
+					<img class="about__img" src="./assets/img/qui-suis-je.jpg" alt="Béatrice et Rustine" />
+					<p class="about__caption">Béatrice & Sally</p>
+				</div>
+			</div>
+			<div class="about__contentWrapper">
+				<p class="about__content">
+					Initialement destinée à une carrière commerciale avec un DUT
+					techniques de commercialisation en poche, je reprends mes études
+					d’éducatrice de jeunes enfants, désireuse d’exercer un métier en
+					lien avec l’accompagnement et l’humain.
+				</p>
+				<p class="about__content">
+					Passionnée et entourée d’animaux depuis ma plus tendre enfance, je
+					ressens le besoin et l’envie de me lancer dans une nouvelle
+					aventure : celle d’allier ma passion avec mes compétences
+					professionnelles acquises durant toutes ces années.
+				</p>
+			</div>
 		</div>
-		<!-- 🌀🌀🌀 HEADER 🌀🌀🌀 -->
-		<header class="header">
-			<img
-				src="./assets/img/header.jpg"
-				alt="Béatrice avec Sally"
-				class="header__bg"
-			/>
-			<img
-				src="./assets/img/logo.png"
-				alt="Logo du Monde De Rustine"
-				class="header__logo"
-			/>
-			
-			<h1 class="header__title">
-				Médiation par l'animal
-				<span class="header__title--block"
-					>Comportementaliste canin et félin</span
-				>
-				<span class="header__title--block">Pet-sitting</span>
-			</h1>
-		</header>
-		<!-- 🌀🌀🌀 QUI SUIS-JE 🌀🌀🌀 -->
-		<section class="about">
-			<img
-				class="about__path"
-				src="./assets/img/paw-path.png"
-				alt="pattes de chien"
-			/>
-			<h2 class="about__title">Qui suis-je ?</h2>
-			<div>
-				<div class="about__imgWrapper">
-					<div class="about__imgSubWrapper">
-						<img
-							class="about__img"
-							src="./assets/img/qui-suis-je.jpg"
-							alt="Béatrice et Rustine"
-						/>
-						<p class="about__caption">Béatrice & Sally</p>
-					</div>
-				</div>
-				<div class="about__contentWrapper">
-					<p class="about__content">
-						Initialement destinée à une carrière commerciale avec un DUT
-						techniques de commercialisation en poche, je reprends mes études
-						d’éducatrice de jeunes enfants, désireuse d’exercer un métier en
-						lien avec l’accompagnement et l’humain.
-					</p>
-					<p class="about__content">
-						Passionnée et entourée d’animaux depuis ma plus tendre enfance, je
-						ressens le besoin et l’envie de me lancer dans une nouvelle
-						aventure : celle d’allier ma passion avec mes compétences
-						professionnelles acquises durant toutes ces années.
-					</p>
-				</div>
-			</div>
-			<div class="about__buttonWrapper">
-				<a href="qui-suis-je.html" class="button">En savoir plus</a>
-			</div>
-		</section>
-		<!-- 🌀🌀🌀 SERVICES    🌀🌀🌀 -->
-		<section class="services">
-			<div class="services__wrapper">
-				<h2 class="services__title">Les services proposés</h2>
-				<i class="fa-solid fa-chevron-left chevron chevron-left"></i>
-				<i class="fa-solid fa-chevron-right chevron chevron-right"></i>
-				<ul class="dots"></ul>
-				<div class="wrapper">
-					<div class="slider-container">
-						<div class="card--desktop">
-							<div class="card service slide">
-								<div class="card__header">
-									<p class="card__title">Comportementaliste canin</p>
-								</div>
-								<div class="card__content">
-									<img
-										class="card__image"
-										src="./assets/img/service-1.jpg"
-										alt=""
-									/>
-									<p>
-										Mes interventions de « relation d’aide », effectuées
-										exclusivement “en positif”, c’est à dire sans rapport de
-										force avec l’animal, sont sans jugement, avec bienveillance
-										et empathie.
-										<span class="card__content--block">
-											Chaque individu, qu’il s’agisse du chat ou de l’humain,
-											est unique. Ce qui explique la spécificité de toute
-											relation homme/chat et l’importance de vous proposer des
-											solutions personnalisées.
-										</span>
-									</p>
-								</div>
-								<div class="card__footer">
-									<a href="#" class="button">En savoir plus</a>
-								</div>
-							</div>
-							<img
-								class="card__image--desktop"
-								src="./assets/img/service-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="card--desktop">
-							<div class="card service slide">
-								<div class="card__header">
-									<p class="card__title">Comportementaliste canin</p>
-								</div>
-								<div class="card__content">
-									<img
-										class="card__image"
-										src="./assets/img/service-1.jpg"
-										alt=""
-									/>
-									<p>
-										Mes interventions de « relation d’aide », effectuées
-										exclusivement “en positif”, c’est à dire sans rapport de
-										force avec l’animal, sont sans jugement, avec bienveillance
-										et empathie.
-										<span class="card__content--block">
-											Chaque individu, qu’il s’agisse du chat ou de l’humain,
-											est unique. Ce qui explique la spécificité de toute
-											relation homme/chat et l’importance de vous proposer des
-											solutions personnalisées.
-										</span>
-									</p>
-								</div>
-								<div class="card__footer">
-									<a href="#" class="button">En savoir plus</a>
-								</div>
-							</div>
-							<img
-								class="card__image--desktop"
-								src="./assets/img/service-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="card--desktop">
-							<div class="card service slide">
-								<div class="card__header">
-									<p class="card__title">Comportementaliste canin</p>
-								</div>
-								<div class="card__content">
-									<img
-										class="card__image"
-										src="./assets/img/service-1.jpg"
-										alt=""
-									/>
-									<p>
-										Mes interventions de « relation d’aide », effectuées
-										exclusivement “en positif”, c’est à dire sans rapport de
-										force avec l’animal, sont sans jugement, avec bienveillance
-										et empathie.
-										<span class="card__content--block">
-											Chaque individu, qu’il s’agisse du chat ou de l’humain,
-											est unique. Ce qui explique la spécificité de toute
-											relation homme/chat et l’importance de vous proposer des
-											solutions personnalisées.
-										</span>
-									</p>
-								</div>
-								<div class="card__footer">
-									<a href="#" class="button">En savoir plus</a>
-								</div>
-							</div>
-							<img
-								class="card__image--desktop"
-								src="./assets/img/service-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="card--desktop">
-							<div class="card service slide">
-								<div class="card__header">
-									<p class="card__title">Comportementaliste canin</p>
-								</div>
-								<div class="card__content">
-									<img
-										class="card__image"
-										src="./assets/img/service-1.jpg"
-										alt=""
-									/>
-									<p>
-										Mes interventions de « relation d’aide », effectuées
-										exclusivement “en positif”, c’est à dire sans rapport de
-										force avec l’animal, sont sans jugement, avec bienveillance
-										et empathie.
-										<span class="card__content--block">
-											Chaque individu, qu’il s’agisse du chat ou de l’humain,
-											est unique. Ce qui explique la spécificité de toute
-											relation homme/chat et l’importance de vous proposer des
-											solutions personnalisées.
-										</span>
-									</p>
-								</div>
-								<div class="card__footer">
-									<a href="#" class="button">En savoir plus</a>
-								</div>
-							</div>
-							<img
-								class="card__image--desktop"
-								src="./assets/img/service-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="card--desktop">
-							<div class="card service slide">
-								<div class="card__header">
-									<p class="card__title">Comportementaliste canin</p>
-								</div>
-								<div class="card__content">
-									<img
-										class="card__image"
-										src="./assets/img/service-1.jpg"
-										alt=""
-									/>
-									<p>
-										Mes interventions de « relation d’aide », effectuées
-										exclusivement “en positif”, c’est à dire sans rapport de
-										force avec l’animal, sont sans jugement, avec bienveillance
-										et empathie.
-										<span class="card__content--block">
-											Chaque individu, qu’il s’agisse du chat ou de l’humain,
-											est unique. Ce qui explique la spécificité de toute
-											relation homme/chat et l’importance de vous proposer des
-											solutions personnalisées.
-										</span>
-									</p>
-								</div>
-								<div class="card__footer">
-									<a href="#" class="button">En savoir plus</a>
-								</div>
-							</div>
-							<img
-								class="card__image--desktop"
-								src="./assets/img/service-1.jpg"
-								alt=""
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 🌀🌀🌀 CONTACT     🌀🌀🌀 -->
-		<section class="contact">
-			<!-- <img src="./assets/img/paw-path.png" class="contact__bg" alt=""> -->
+		<div class="about__buttonWrapper">
+			<a href="qui-suis-je.html" class="button">En savoir plus</a>
+		</div>
+	</section>
+	<!-- 🌀🌀🌀 SERVICES    🌀🌀🌀 -->
+	<section class="services">
+		<div class="services__wrapper">
+			<h2 class="services__title">Les services proposés</h2>
+			<i class="fa-solid fa-chevron-left chevron chevron-left"></i>
+			<i class="fa-solid fa-chevron-right chevron chevron-right"></i>
+			<ul class="dots"></ul>
 			<div class="wrapper">
-				<div class="left">
-					<img class="left__image" src="./assets/img/paw-contact-left.png" alt="patte de chien">
-					<h2 class="contact__title">Contact</h2>
-					<p class="contact__subtitle">
-						Une question ?
-						<span class="contact__subtitle--block"
-							>N'hésitez pas à me contacter</span
-						>
-					</p>
-					<form action="" class="form">
-						<div class="form__group">
-							<label for="name" class="form__label">Nom</label>
-							<input
-								type="text"
-								name="name"
-								class="form__input"
-								id="name"
-								required
-							/>
+				<div class="slider-container">
+					<div class="card--desktop">
+						<div class="card service slide">
+							<div class="card__header">
+								<p class="card__title">Comportementaliste canin</p>
+							</div>
+							<div class="card__content">
+								<img class="card__image" src="./assets/img/service-1.jpg" alt="" />
+								<p>
+									Mes interventions de « relation d’aide », effectuées
+									exclusivement “en positif”, c’est à dire sans rapport de
+									force avec l’animal, sont sans jugement, avec bienveillance
+									et empathie.
+									<span class="card__content--block">
+										Chaque individu, qu’il s’agisse du chat ou de l’humain,
+										est unique. Ce qui explique la spécificité de toute
+										relation homme/chat et l’importance de vous proposer des
+										solutions personnalisées.
+									</span>
+								</p>
+							</div>
+							<div class="card__footer">
+								<a href="#" class="button">En savoir plus</a>
+							</div>
 						</div>
-						<div class="form__group">
-							<label for="email" class="form__label">Email</label>
-							<input
-								type="email"
-								name="email"
-								class="form__input"
-								id="email"
-								required
-							/>
+						<img class="card__image--desktop" src="./assets/img/service-1.jpg" alt="" />
+					</div>
+					<div class="card--desktop">
+						<div class="card service slide">
+							<div class="card__header">
+								<p class="card__title">Comportementaliste canin</p>
+							</div>
+							<div class="card__content">
+								<img class="card__image" src="./assets/img/service-1.jpg" alt="" />
+								<p>
+									Mes interventions de « relation d’aide », effectuées
+									exclusivement “en positif”, c’est à dire sans rapport de
+									force avec l’animal, sont sans jugement, avec bienveillance
+									et empathie.
+									<span class="card__content--block">
+										Chaque individu, qu’il s’agisse du chat ou de l’humain,
+										est unique. Ce qui explique la spécificité de toute
+										relation homme/chat et l’importance de vous proposer des
+										solutions personnalisées.
+									</span>
+								</p>
+							</div>
+							<div class="card__footer">
+								<a href="#" class="button">En savoir plus</a>
+							</div>
 						</div>
-						<div class="form__group">
-							<label for="message" class="form__label">Message</label>
-							<textarea
-								rows="6"
-								resize="none"
-								class="form__input form__input--textarea"
-								name="message"
-								id="message"
-							></textarea>
+						<img class="card__image--desktop" src="./assets/img/service-1.jpg" alt="" />
+					</div>
+					<div class="card--desktop">
+						<div class="card service slide">
+							<div class="card__header">
+								<p class="card__title">Comportementaliste canin</p>
+							</div>
+							<div class="card__content">
+								<img class="card__image" src="./assets/img/service-1.jpg" alt="" />
+								<p>
+									Mes interventions de « relation d’aide », effectuées
+									exclusivement “en positif”, c’est à dire sans rapport de
+									force avec l’animal, sont sans jugement, avec bienveillance
+									et empathie.
+									<span class="card__content--block">
+										Chaque individu, qu’il s’agisse du chat ou de l’humain,
+										est unique. Ce qui explique la spécificité de toute
+										relation homme/chat et l’importance de vous proposer des
+										solutions personnalisées.
+									</span>
+								</p>
+							</div>
+							<div class="card__footer">
+								<a href="#" class="button">En savoir plus</a>
+							</div>
 						</div>
-						<p class="form__message">
-							En soumetant ce formulaire, je certifie avoir pris connaissance de
-							la <a href="#">politique de confidentialité</a>.
-						</p>
-						<button type="submit" class="form__submit">Envoyer</button>
-					</form>
-				</div>
-				<div class="right">
-					<img class="right__image" src="./assets/img/paw-contact.png" alt="pattes de chiens">
+						<img class="card__image--desktop" src="./assets/img/service-1.jpg" alt="" />
+					</div>
+					<div class="card--desktop">
+						<div class="card service slide">
+							<div class="card__header">
+								<p class="card__title">Comportementaliste canin</p>
+							</div>
+							<div class="card__content">
+								<img class="card__image" src="./assets/img/service-1.jpg" alt="" />
+								<p>
+									Mes interventions de « relation d’aide », effectuées
+									exclusivement “en positif”, c’est à dire sans rapport de
+									force avec l’animal, sont sans jugement, avec bienveillance
+									et empathie.
+									<span class="card__content--block">
+										Chaque individu, qu’il s’agisse du chat ou de l’humain,
+										est unique. Ce qui explique la spécificité de toute
+										relation homme/chat et l’importance de vous proposer des
+										solutions personnalisées.
+									</span>
+								</p>
+							</div>
+							<div class="card__footer">
+								<a href="#" class="button">En savoir plus</a>
+							</div>
+						</div>
+						<img class="card__image--desktop" src="./assets/img/service-1.jpg" alt="" />
+					</div>
+					<div class="card--desktop">
+						<div class="card service slide">
+							<div class="card__header">
+								<p class="card__title">Comportementaliste canin</p>
+							</div>
+							<div class="card__content">
+								<img class="card__image" src="./assets/img/service-1.jpg" alt="" />
+								<p>
+									Mes interventions de « relation d’aide », effectuées
+									exclusivement “en positif”, c’est à dire sans rapport de
+									force avec l’animal, sont sans jugement, avec bienveillance
+									et empathie.
+									<span class="card__content--block">
+										Chaque individu, qu’il s’agisse du chat ou de l’humain,
+										est unique. Ce qui explique la spécificité de toute
+										relation homme/chat et l’importance de vous proposer des
+										solutions personnalisées.
+									</span>
+								</p>
+							</div>
+							<div class="card__footer">
+								<a href="#" class="button">En savoir plus</a>
+							</div>
+						</div>
+						<img class="card__image--desktop" src="./assets/img/service-1.jpg" alt="" />
+					</div>
 				</div>
 			</div>
-		</section>
-		<!-- 🌀🌀🌀 FOOTER      🌀🌀🌀 -->
-		<footer class="footer">
-			<p>
-				Le Monde de Rustine - 2022
-			</p>
-		</footer>
-		<script src="./assets/js/script.js"></script>
-		<script src="./assets/js/nav.js"></script>
-	</body>
+		</div>
+	</section>
+	<!-- 🌀🌀🌀 CONTACT     🌀🌀🌀 -->
+	<section class="contact">
+		<!-- <img src="./assets/img/paw-path.png" class="contact__bg" alt=""> -->
+		<div class="wrapper">
+			<div class="left">
+				<img class="left__image" src="./assets/img/paw-contact-left.png" alt="patte de chien">
+				<h2 class="contact__title">Contact</h2>
+				<p class="contact__subtitle">
+					Une question ?
+					<span class="contact__subtitle--block">N'hésitez pas à me contacter</span>
+				</p>
+				<form action="" class="form">
+					<div class="form__group">
+						<label for="name" class="form__label">Nom</label>
+						<input type="text" name="name" class="form__input" id="name" required />
+					</div>
+					<div class="form__group">
+						<label for="email" class="form__label">Email</label>
+						<input type="email" name="email" class="form__input" id="email" required />
+					</div>
+					<div class="form__group">
+						<label for="message" class="form__label">Message</label>
+						<textarea rows="6" resize="none" class="form__input form__input--textarea" name="message"
+							id="message"></textarea>
+					</div>
+					<p class="form__message">
+						En soumetant ce formulaire, je certifie avoir pris connaissance de
+						la <a href="#">politique de confidentialité</a>.
+					</p>
+					<button type="submit" class="form__submit">Envoyer</button>
+				</form>
+			</div>
+			<div class="right">
+				<img class="right__image" src="./assets/img/paw-contact.png" alt="pattes de chiens">
+			</div>
+		</div>
+	</section>
+	<!-- 🌀🌀🌀 FOOTER      🌀🌀🌀 -->
+	<footer class="footer">
+		<p>
+			Le Monde de Rustine - 2022
+		</p>
+	</footer>
+	<script src="./assets/js/script.js"></script>
+	<script src="./assets/js/nav.js"></script>
+</body>
+
 </html>
