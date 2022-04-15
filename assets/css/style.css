@@ -777,25 +777,35 @@ h2 {
   cursor: pointer;
   transform: rotate(0);
   transition: all 0.3s ease;
-  perspective: 10px;
 }
 .services .services__wrapper .mobile .mobile__single .single__header .single__icon--active {
   transform: rotate(180deg);
-  perspective: 100px;
 }
-.services .services__wrapper .mobile .mobile__single .content-wrapper img {
+.services .services__wrapper .mobile .mobile__single .content-wrapper .img-wrapper {
   display: none;
 }
-.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content {
+.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper {
   max-height: 0px;
-  font-size: 1.4rem;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
-.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--active {
+.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper .single__content {
+  font-size: 1.4rem;
+  line-height: 150%;
+  margin-bottom: 1em;
+}
+.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper--active {
   max-height: 500px;
+  overflow: unset;
 }
-.services .services__wrapper .mobile .mobile__single .content-wrapper:not(:last-child)::after {
+.services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper .button {
+  margin: 0 1em 0 auto;
+  padding: 0.4em 1.2em;
+  display: block;
+  width: fit-content;
+  font-size: 1.4rem;
+}
+.services .services__wrapper .mobile .mobile__single:not(:last-child)::after {
   content: "";
   position: absolute;
   left: 0;
@@ -803,9 +813,6 @@ h2 {
   width: 100%;
   height: 1px;
   background-color: #fff;
-}
-.services .services__wrapper .mobile .mobile__single .button {
-  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -866,32 +873,48 @@ h2 {
   .services .services__wrapper .mobile .mobile__single .content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
   }
-  .services .services__wrapper .mobile .mobile__single .content-wrapper img {
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .img-wrapper {
     display: block;
     width: 40%;
-    max-width: 200px;
-    max-height: 200px;
+  }
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .img-wrapper img {
+    display: block;
+    max-height: 260px;
+    width: 100%;
     border-radius: 50px;
     border: 6px solid #eaeaea;
+    margin: 0 auto 0.5em auto;
   }
-  .services .services__wrapper .mobile .mobile__single .content-wrapper .single__content {
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .img-wrapper .img__text {
+    font-size: 1.5rem;
+    text-align: right;
+    position: relative;
+    left: -1.3em;
+    opacity: 0.5;
+  }
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper {
     max-height: unset;
-    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 55%;
   }
-  .services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--active {
-    all: unset;
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper .single__content {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
   }
-  .services .services__wrapper .mobile .mobile__single .content-wrapper:not(:last-child)::after {
-    display: none;
+  .services .services__wrapper .mobile .mobile__single .content-wrapper .single__content--wrapper--active {
+    all: unset;
   }
   .services .services__wrapper .mobile .mobile__single .button {
     display: block;
-    margin: 0 5em 0 auto;
+    margin: 0 0 0 auto;
     width: fit-content;
     padding: 0.3em 1.3em;
+  }
+  .services .services__wrapper .mobile .mobile__single:not(:last-child)::after {
+    display: none;
   }
   .services .services__wrapper .mobile .mobile__single:last-child {
     margin: 0 auto 4em auto;
