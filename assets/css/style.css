@@ -64,11 +64,10 @@ h2 {
 }
 .qui-suis-je header i {
   font-size: 3.3rem;
-  padding-left: 0.1em;
   color: #fff;
   background-color: #D8C6B5;
   border-radius: 50%;
-  padding: 0.1em 0.5em;
+  padding: 0.3em 0.4em;
   transition: background-color 0.1s ease;
 }
 .qui-suis-je header i:hover {
@@ -161,6 +160,9 @@ h2 {
 .qui-suis-je .wrapper--second div {
   order: 1;
 }
+.qui-suis-je .wrapper--second div ul {
+  padding: 0 0.8em;
+}
 .qui-suis-je .wrapper--second .figure__wrapper {
   align-items: flex-start;
   order: 0;
@@ -236,33 +238,38 @@ h2 {
 .formations .formations__wrapper .dots .dot--active {
   background-color: #c994a4;
 }
-.formations .formations__wrapper i {
+.formations .formations__wrapper .slider-container--desktop {
   display: none;
 }
 .formations .formations__wrapper .slider-container {
   display: inline-flex;
   overflow: hidden;
+  scrollbar-width: none;
   transform: translateX(0);
-  transition: transform 0.2s ease-out;
+  will-change: transform;
+  transition: transform 0.3s ease-out;
   cursor: grab;
 }
 .formations .formations__wrapper .slider-container .card {
-  width: 90vw;
-  margin: 0 5vw;
   background-color: #eaeaea;
   border-radius: 30px;
   transition: transform 0.2s ease-in-out;
+  max-height: 100vh;
+  width: 75vw;
+  margin: 0 12.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+  flex-direction: column;
 }
-.formations .formations__wrapper .slider-container .card .formation {
-  padding: 3em;
-}
-.formations .formations__wrapper .slider-container .card .formation img {
+.formations .formations__wrapper .slider-container .card .card__img {
   display: block;
   margin: auto;
   max-width: 100%;
   margin-bottom: 2em;
 }
-.formations .formations__wrapper .slider-container .card .formation p {
+.formations .formations__wrapper .slider-container .card .card__text {
   font-size: clamp(1.6rem, 1.5vw, 1.8rem);
 }
 .formations .formations__wrapper .grabbing {
@@ -405,63 +412,47 @@ h2 {
   .qui-suis-je .wrapper--second > div {
     width: 52%;
   }
-  .qui-suis-je .formations {
-    z-index: -20;
-    overflow: hidden;
+
+  .formations .formations__wrapper {
+    margin: 0 125px 0 5%;
   }
-  .qui-suis-je .formations .formations__wrapper {
-    max-width: 1440px;
-    margin: auto;
-    position: relative;
+  .formations .formations__wrapper .dots,
+.formations .formations__wrapper .slider-container {
+    display: none;
   }
-  .qui-suis-je .formations .formations__wrapper h3 {
-    text-align: unset;
-    margin-left: 10%;
-    padding-top: 3em;
-  }
-  .qui-suis-je .formations .formations__wrapper i {
-    display: block;
-    z-index: 30;
-    color: #b3b3b3;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: all 0.07s ease-in-out;
-  }
-  .qui-suis-je .formations .formations__wrapper i:hover {
-    color: #c994a4;
-  }
-  .qui-suis-je .formations .formations__wrapper i:first-of-type {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-  }
-  .qui-suis-je .formations .formations__wrapper i:last-of-type {
-    position: absolute;
-    top: 50%;
-    right: 15%;
-  }
-  .qui-suis-je .formations .formations__wrapper .slider-container {
-    user-select: none;
-    margin-bottom: 4em;
-    transition-duration: 0.3s;
-    cursor: unset;
-  }
-  .qui-suis-je .formations .formations__wrapper .slider-container .card--desktop {
+  .formations .formations__wrapper .slider-container--desktop {
     display: flex;
-    justify-content: center;
-    width: 80vw;
-    margin: 0 10vw;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    justify-content: space-around;
   }
-  .qui-suis-je .formations .formations__wrapper .slider-container .card--desktop .card {
-    cursor: grab;
-    max-width: 1000px;
-    width: unset;
-    margin: unset;
-    height: fit-content;
-    z-index: 10;
-    user-select: none;
-    transition-duration: 0.3s;
-    max-width: 750px;
+  .formations .formations__wrapper .slider-container--desktop .card {
+    box-shadow: 0 0.5rem 1.5rem #d8c6b523;
+    height: 465px;
+    width: 22%;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1.5em 2em;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 2.5em;
+  }
+  .formations .formations__wrapper .slider-container--desktop .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1em;
+  }
+  .formations .formations__wrapper .slider-container--desktop .card .card__text {
+    font-size: 1.6rem;
+  }
+  .formations .formations__wrapper h3 {
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    color: #bbaa9a;
+    margin-bottom: 3em;
   }
 }
 .nav {
@@ -646,6 +637,12 @@ h2 {
 @media screen and (min-width: 1024px) {
   .header .header__title {
     text-align: unset;
+  }
+}
+@media screen and (max-width: 470px) {
+  .header .header__bg {
+    width: 120%;
+    left: -6em;
   }
 }
 .about {
