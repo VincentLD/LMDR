@@ -2,6 +2,7 @@
 	background-color: #d8c6b5;
 	padding: 1em 0;
 	overflow: hidden;
+	margin-bottom: 3rem;
 
 	.services__wrapper {
 		max-width: 1440px;
@@ -86,7 +87,7 @@
 				}
 
 				&:not(:last-child)::after {
-					content: '';
+					content: "";
 					position: absolute;
 					left: 0;
 					bottom: -1em;
@@ -102,6 +103,7 @@
 @media screen and (min-width: 1024px) {
 	.services {
 		z-index: -20;
+		margin-bottom: unset;
 
 		.services__wrapper {
 			position: relative;

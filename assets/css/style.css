@@ -760,6 +760,7 @@ h2 {
   background-color: #d8c6b5;
   padding: 1em 0;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
 .services .services__wrapper {
   max-width: 1440px;
@@ -842,6 +843,7 @@ h2 {
 @media screen and (min-width: 1024px) {
   .services {
     z-index: -20;
+    margin-bottom: unset;
   }
   .services .services__wrapper {
     position: relative;
@@ -949,7 +951,9 @@ h2 {
   margin: auto;
   position: relative;
 }
-.contact .contact__bg, .contact .right, .contact .left__image {
+.contact .contact__bg,
+.contact .right,
+.contact .left__image {
   display: none;
 }
 .contact .contact__title {
@@ -968,17 +972,18 @@ h2 {
 .contact .form .form__group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.8em;
+  margin-bottom: 1.6em;
 }
 .contact .form .form__group .form__label {
   padding-left: 0.3em;
   font-size: clamp(1.6rem, 1.5vw, 1.8rem);
+  margin-bottom: 0.8em;
 }
 .contact .form .form__group .form__input {
   border: none;
   padding: 0.7em 0.6em;
   border-radius: 5px;
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
   font-family: "poppinsregular", sans-serif;
 }
 .contact .form .form__group .form__input--textarea {
@@ -1006,6 +1011,15 @@ h2 {
 }
 .contact .form .form__submit:hover {
   background-color: #a77b88;
+}
+.contact .contact__separator {
+  display: block;
+  margin: 0 auto 3em auto;
+}
+.contact .contact__logo {
+  display: block;
+  width: 65%;
+  margin: 0 auto 3em auto;
 }
 
 .footer {
@@ -1037,8 +1051,10 @@ h2 {
   }
   .contact .wrapper {
     display: flex;
+    position: relative;
   }
-  .contact .wrapper .left, .contact .wrapper .right {
+  .contact .wrapper .left,
+.contact .wrapper .right {
     width: 50%;
   }
   .contact .wrapper .left {
@@ -1051,7 +1067,8 @@ h2 {
     right: 5%;
     top: 10%;
   }
-  .contact .wrapper .left .contact__title, .contact .wrapper .left .contact__subtitle {
+  .contact .wrapper .left .contact__title,
+.contact .wrapper .left .contact__subtitle {
     text-align: unset;
     padding-left: 20%;
   }
@@ -1063,13 +1080,25 @@ h2 {
   .contact .wrapper .right {
     z-index: -15;
     display: block;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     position: relative;
   }
   .contact .wrapper .right .right__image {
     position: absolute;
     top: 50%;
     left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .contact .contact__separator {
+    display: none;
+  }
+  .contact .contact__logo {
+    width: 65%;
+    margin: unset;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    max-width: 375px;
     transform: translate(-50%, -50%);
   }
 }
