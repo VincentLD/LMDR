@@ -1,13 +1,47 @@
+@font-face {
+	font-family: "sacramentoregular";
+	src: url("../fonts/sacramento-regular-webfont.woff2") format("woff2"),
+		url("../fonts/sacramento-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir Next LT Pro";
+	src: url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
+		url("../fonts/AvenirNextLTPro-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "poppinsregular";
+	src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+		url("../fonts/poppins-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "poppinssemibold";
+	src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+		url("../fonts/poppins-semibold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* COLORS */
-$rose: #C994A4;
-$beige: #D8C6B5;
+$rose: #c994a4;
+$beige: #d8c6b5;
 $blanc-1: #fff;
-$blanc-2: #F1F1F1;
+$blanc-2: #f1f1f1;
 $noir: #262626;
 
 /* FONTS */
-$font-1: 'Sacramento', cursive;
-$font-2: 'Poppins', sans-serif;
+$font-1: "sacramentoregular", cursive;
+$font-2: "poppinsregular", sans-serif;
+$font-3: "Avenir Next LT Pro", sans-serif;
 
 /* FONT SIZE */
 $fs-section-1: clamp(4rem, 8vw, 6.5rem);
@@ -17,49 +51,53 @@ $fs-button: 1.6rem;
 
 /* MISC */
 @mixin border-radius {
-  border-radius: 30px;
+	border-radius: 30px;
 }
 
-*, *:after, *:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html { font-size: 62.5%; }
+html {
+	font-size: 62.5%;
+}
 
 body {
-  color: $noir;
-  background-color: $blanc-2;
-  font-family: $font-2;
+	color: $noir;
+	background-color: $blanc-2;
+	font-family: $font-2;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-h2 { 
-  font-family: $font-1;
-  color: $rose;
-  letter-spacing: -1.2px;
+h2 {
+	font-family: $font-1;
+	color: $rose;
+	letter-spacing: -1.2px;
 }
 
 .button {
-  padding: 0.4em 2em;
-  background: $rose;
-  border-radius: 20px;
-  color: $blanc-2;
-  font-weight: bold;
-  margin-bottom: 2em;
-  font-size: $fs-button;
-  cursor: pointer;
-  transition: all .1s ease;
-  
-  &:hover {
-    background-color: #a77b88;
-  }
+	padding: 0.4em 2em;
+	background: $rose;
+	border-radius: 20px;
+	color: $blanc-2;
+	font-weight: bold;
+	margin-bottom: 2em;
+	font-size: $fs-button;
+	cursor: pointer;
+	transition: all 0.1s ease;
+
+	&:hover {
+		background-color: #a77b88;
+	}
 }

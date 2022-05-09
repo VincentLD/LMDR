@@ -1,8 +1,35 @@
+@font-face {
+  font-family: "sacramentoregular";
+  src: url("../fonts/sacramento-regular-webfont.woff2") format("woff2"), url("../fonts/sacramento-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinssemibold";
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* COLORS */
 /* FONTS */
 /* FONT SIZE */
 /* MISC */
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,8 +41,8 @@ html {
 
 body {
   color: #262626;
-  background-color: #F1F1F1;
-  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  font-family: "poppinsregular", sans-serif;
 }
 
 ul {
@@ -27,16 +54,16 @@ a {
 }
 
 h2 {
-  font-family: "Sacramento", cursive;
-  color: #C994A4;
+  font-family: "sacramentoregular", cursive;
+  color: #c994a4;
   letter-spacing: -1.2px;
 }
 
 .button {
   padding: 0.4em 2em;
-  background: #C994A4;
+  background: #c994a4;
   border-radius: 20px;
-  color: #F1F1F1;
+  color: #f1f1f1;
   font-weight: bold;
   margin-bottom: 2em;
   font-size: 1.6rem;
@@ -65,7 +92,7 @@ h2 {
 .qui-suis-je header i {
   font-size: 3.3rem;
   color: #fff;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   border-radius: 50%;
   padding: 0.3em 0.4em;
   transition: background-color 0.1s ease;
@@ -105,7 +132,7 @@ h2 {
   content: "";
   display: block;
   position: absolute;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
 }
 .qui-suis-je .wrapper .figure__wrapper::before {
   width: 40%;
@@ -130,13 +157,13 @@ h2 {
   content: "";
   position: absolute;
   display: block;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   left: 30%;
   top: 50%;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   transform: translate(-50%, -50%);
 }
 .qui-suis-je .wrapper .figure__wrapper figure img {
@@ -173,7 +200,7 @@ h2 {
 .qui-suis-je .wrapper--second .figure__wrapper::before, .qui-suis-je .wrapper--second .figure__wrapper::after {
   content: "";
   display: block;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   position: absolute;
 }
 .qui-suis-je .wrapper--second .figure__wrapper::before {
@@ -205,7 +232,7 @@ h2 {
   width: 40%;
   right: -10%;
   height: 1px;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   bottom: -4.5%;
 }
 .qui-suis-je .wrapper--second p {
@@ -322,7 +349,7 @@ h2 {
 .qui-suis-je .wrapper--second::after {
     content: "";
     display: block;
-    background-color: #D8C6B5;
+    background-color: #d8c6b5;
     position: absolute;
   }
   .qui-suis-je .wrapper--first::before {
@@ -386,7 +413,7 @@ h2 {
     content: "";
     display: block;
     position: absolute;
-    background-color: #D8C6B5;
+    background-color: #d8c6b5;
   }
   .qui-suis-je .wrapper .figure__wrapper figure,
 .qui-suis-je .wrapper--second .figure__wrapper figure {
@@ -472,7 +499,7 @@ h2 {
   position: fixed;
   width: 100%;
   left: 100vw;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   transition: all 0.5s ease-out;
 }
 .nav .navbar .nav__links .navbar__item {
@@ -482,7 +509,7 @@ h2 {
 }
 .nav .navbar .nav__links .nav__link {
   font-size: 5rem;
-  font-family: "Sacramento", cursive;
+  font-family: "sacramentoregular", cursive;
   color: #fff;
 }
 .nav .navbar .nav__links .nav__link i {
@@ -565,7 +592,7 @@ h2 {
     width: 100%;
     transition: all 0.2s ease-out;
     height: 70px;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     width: 70px;
     font-size: unset;
     border-radius: 35px;
@@ -574,8 +601,8 @@ h2 {
   .nav .navbar .nav__links .navbar__item .nav__link .nav__icon {
     display: block;
     font-size: 3.8rem;
-    background-color: #F1F1F1;
-    color: #D8C6B5;
+    background-color: #f1f1f1;
+    color: #d8c6b5;
     position: absolute;
     height: 70px;
     width: 70px;
@@ -588,11 +615,11 @@ h2 {
     transition: all 0.2s ease-out;
   }
   .nav .navbar .nav__links .navbar__item .nav__link .nav__icon--active {
-    color: #C994A4;
+    color: #c994a4;
   }
   .nav .navbar .nav__links .navbar__item .nav__link .link {
     display: block;
-    color: #D8C6B5;
+    color: #d8c6b5;
     position: absolute;
     right: 75px;
     white-space: nowrap;
@@ -600,13 +627,10 @@ h2 {
     transition: all 0.2s ease-out;
   }
   .nav .navbar .nav__links .navbar__item .nav__link .link--active {
-    color: #C994A4;
+    color: #c994a4;
   }
 }
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 1em;
   height: 100vh;
 }
@@ -619,17 +643,18 @@ h2 {
   width: 100%;
   z-index: -10;
 }
-.header .header__logo {
-  position: absolute;
-  z-index: -10;
-  top: 2em;
-  left: 2rem;
-  width: clamp(160px, 22vw, 260px);
-}
 .header .header__title {
-  text-align: center;
-  font-size: clamp(2.65rem, 5vw, 4rem);
+  text-align: left;
+  padding: 2em 14vh 0 1em;
+  font-size: clamp(1.8rem, 2.8vw, 2.9rem);
   color: #fff;
+  font-family: "Avenir Next LT Pro", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1px #000000c4;
+}
+.header .header__title span {
+  margin-bottom: 0.5em;
+  display: block;
 }
 .header .header__title--block {
   display: block;
@@ -638,12 +663,13 @@ h2 {
 @media screen and (min-width: 1024px) {
   .header .header__title {
     text-align: unset;
+    padding: 2em 14vh 0 5em;
   }
 }
 @media screen and (max-width: 470px) {
   .header .header__bg {
     width: 130%;
-    left: -13em;
+    left: -30%;
   }
 }
 .about {
@@ -752,7 +778,7 @@ h2 {
 .services .services__wrapper .mobile .mobile__single {
   position: relative;
   margin-bottom: 3em;
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
 }
 .services .services__wrapper .mobile .mobile__single .single__header {
   display: flex;
@@ -854,7 +880,7 @@ h2 {
     padding-left: 2em;
   }
   .services .services__wrapper .mobile .mobile__single .single__header .single__title {
-    color: #C994A4;
+    color: #c994a4;
     text-transform: unset;
     font-size: 2.2rem;
     line-height: 30px;
@@ -927,7 +953,7 @@ h2 {
   display: none;
 }
 .contact .contact__title {
-  color: #C994A4;
+  color: #c994a4;
   font-size: clamp(4rem, 8vw, 6.5rem);
   text-align: center;
 }
@@ -953,13 +979,13 @@ h2 {
   padding: 0.7em 0.6em;
   border-radius: 5px;
   background-color: #E4E4E4;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppinsregular", sans-serif;
 }
 .contact .form .form__group .form__input--textarea {
   resize: none;
 }
 .contact .form .form__group .form__input:focus-visible {
-  outline: 2px solid #C994A4;
+  outline: 2px solid #c994a4;
 }
 .contact .form .form__message {
   margin-bottom: 1em;
@@ -968,7 +994,7 @@ h2 {
 .contact .form .form__submit {
   width: 100%;
   padding: 0.7em;
-  background-color: #C994A4;
+  background-color: #c994a4;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -983,7 +1009,7 @@ h2 {
 }
 
 .footer {
-  background-color: #D8C6B5;
+  background-color: #d8c6b5;
   height: 7vh;
   display: flex;
   justify-content: center;
