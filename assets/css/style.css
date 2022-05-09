@@ -798,7 +798,7 @@ h2 {
 }
 .services .services__wrapper .mobile .mobile__single .single__header .single__icon {
   font-size: 3.6rem;
-  color: #fff;
+  color: #c994a4;
   cursor: pointer;
   transform: rotate(0);
   transition: all 0.3s ease;
@@ -837,7 +837,7 @@ h2 {
   bottom: -1em;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: #c994a4;
 }
 
 @media screen and (min-width: 1024px) {
