@@ -1009,8 +1009,69 @@ h2 {
 .contact .form .form__group .form__input:focus-visible {
   outline: 2px solid #c994a4;
 }
-.contact .form .form__message {
+.contact .form .approval {
+  display: flex;
+  align-items: center;
   margin-bottom: 1em;
+  position: relative;
+}
+.contact .form .approval .checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+}
+.contact .form .approval .checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contact .form .approval .checkbox_container input:checked ~ .checkmark {
+  /* Show the checkmark when checked */
+}
+.contact .form .approval .checkbox_container input:checked ~ .checkmark::before, .contact .form .approval .checkbox_container input:checked ~ .checkmark::after {
+  display: block;
+}
+.contact .form .approval .checkbox_container .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 25px;
+  border-radius: 5px;
+  width: 25px;
+  background-color: #f1f1f1;
+  border: 2px solid #c994a4;
+  transform: translateY(-50%);
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+.contact .form .approval .checkbox_container .checkmark::before, .contact .form .approval .checkbox_container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 5px;
+  background-color: #c994a4;
+  border-radius: 1px;
+}
+.contact .form .approval .checkbox_container .checkmark::before {
+  left: 5px;
+  top: 6px;
+  height: 10px;
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+.contact .form .approval .checkbox_container .checkmark::after {
+  left: 15px;
+  top: -2px;
+  height: 22px;
+  transform: rotate(45deg);
+  outline: 2.1px solid #f1f1f1;
+}
+.contact .form .approval .form__message {
   font-size: 1.5rem;
 }
 .contact .form .form__submit {

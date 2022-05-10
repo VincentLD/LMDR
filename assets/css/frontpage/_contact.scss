@@ -53,9 +53,83 @@
 			}
 		}
 
-		.form__message {
+		.approval {
+			display: flex;
+			align-items: center;
 			margin-bottom: 1em;
-			font-size: 1.5rem;
+			position: relative;
+
+			.checkbox_container {
+				display: block;
+				position: relative;
+				padding-left: 35px;
+				cursor: pointer;
+				font-size: 22px;
+				user-select: none;
+
+				/* Hide the browser's default checkbox */
+				input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					height: 0;
+					width: 0;
+
+					&:checked {
+						~ .checkmark {
+							/* Show the checkmark when checked */
+							&::before,
+							&::after {
+								display: block;
+							}
+						}
+					}
+				}
+
+				.checkmark {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					height: 25px;
+					border-radius: 5px;
+					width: 25px;
+					background-color: #f1f1f1;
+					border: 2px solid $rose;
+					transform: translateY(-50%);
+
+					/* Create the checkmark/indicator (hidden when not checked) */
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						display: none;
+						width: 5px;
+						background-color: $rose;
+
+						border-radius: 1px;
+					}
+
+					&::before {
+						left: 5px;
+						top: 6px;
+						height: 10px;
+						transform: rotate(-45deg);
+						z-index: 10;
+					}
+
+					&::after {
+						left: 15px;
+						top: -2px;
+						height: 22px;
+						transform: rotate(45deg);
+						outline: 2.1px solid #f1f1f1;
+					}
+				}
+			}
+
+			.form__message {
+				font-size: 1.5rem;
+			}
 		}
 
 		.form__submit {
