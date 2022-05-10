@@ -13,20 +13,29 @@
 	}
 
 	.header__title {
-		text-align: left;
-		padding: 2em 14vh 0 1em;
+		text-align: center;
 		font-size: clamp(1.8rem, 2.8vw, 2.9rem);
 		color: $blanc-1;
 		font-family: $font-3;
 		text-transform: uppercase;
 		text-shadow: 0px 0px 1px #000000c4;
+		padding-top: 3em;
+		margin-bottom: 8em;
+		font-weight: bold;
+		position: relative;
+		right: 2.3em;
+	}
+
+	.header__subtitle {
+		font-family: $font-3;
+		color: $blanc-1;
+		font-weight: 400;
+		padding-left: 1em;
+		font-size: clamp(2.6rem, 4vw, 4rem);
 
 		span {
+			text-shadow: 2px 2px 19px #000000c4;
 			margin-bottom: 0.5em;
-			display: block;
-		}
-
-		&--block {
 			display: block;
 		}
 	}

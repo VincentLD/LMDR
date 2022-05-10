@@ -12,6 +12,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "poppinsregular";
   src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -568,7 +575,7 @@ h2 {
   transform: rotate(46deg) translateX(-1px) translateY(-1px);
 }
 .nav .show-nav .burger-bars .burger-bar::after {
-  transform: rotate(-46deg) translateX(-1px) translateY(-1px);
+  transform: rotate(-46deg) translateX(1px) translateY(-1px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -645,19 +652,28 @@ h2 {
   z-index: -10;
 }
 .header .header__title {
-  text-align: left;
-  padding: 2em 14vh 0 1em;
+  text-align: center;
   font-size: clamp(1.8rem, 2.8vw, 2.9rem);
   color: #fff;
   font-family: "Avenir Next LT Pro", sans-serif;
   text-transform: uppercase;
   text-shadow: 0px 0px 1px #000000c4;
+  padding-top: 3em;
+  margin-bottom: 8em;
+  font-weight: bold;
+  position: relative;
+  right: 2.3em;
 }
-.header .header__title span {
+.header .header__subtitle {
+  font-family: "Avenir Next LT Pro", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  padding-left: 1em;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+}
+.header .header__subtitle span {
+  text-shadow: 2px 2px 19px #000000c4;
   margin-bottom: 0.5em;
-  display: block;
-}
-.header .header__title--block {
   display: block;
 }
 
